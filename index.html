@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body class="bg-cyan-200 font-spacemono">
+    <div class="flex flex-col items-center mt-12 tracking-widest">
+        <h1 class="text-3xl text-gray-500"> SPLI </h1>
+        <h1 class="text-3xl text-gray-500"> TTER </h1>
+    </div>
+
+
+    <div class="container mx-auto p-12 bg-white mt-12 rounded-t-xl md:flex flex-row items-center justify-between">
+        <div class="lg:w-1/2 lg:p-8">
+            <div>
+                <h2 class="text-1xl text-gray-500 font-bold lg:text-2xl"> Bill </h2>
+                <input type="number" placeholder="0" class="bill-form mt-3 outline-none h-10 w-full bg-veryLightGrayishCyan rounded-md text-gray-600 text-2xl font-bold border-none text-right md:w-72 lg:w-full p-6" id="inp-bill">
+            </div>
+
+
+            <div class="select-tip mt-10">
+                <h2 class="text-gray-500 font-bold lg:text-2xl"> Select tip % </h2>
+                <div class="first-btn space-x-5 text-white mt-5">
+                    <button class="tip-btn btn-tip rounded-md hover:bg-strongCyan text-2xl w-24 h-12 bg-cyan-800 md:w-20 lg:w-28" id="fifth-percent"> 5% </button>
+                    <button class="tip-btn btn-tip rounded-md hover:bg-strongCyan text-2xl w-24 h-12 bg-cyan-800 md:w-20 lg:w-28" id="tenth-percent"> 10% </button>
+                    <button class="tip-btn btn-tip rounded-md hover:bg-strongCyan text-2xl w-24 h-12 bg-cyan-800 md:w-20  lg:w-28" id="fiftenth-percent"> 15% </button>
+                </div>
+                <div class="mt-8 text-white space-x-5">
+                    <button class="tip-btn btn-tip rounded-md hover:bg-strongCyan text-2xl w-24 h-12 bg-cyan-800 md:w-20 lg:w-28" id="twentyfifth-percent"> 25% </button>
+                    <button class="tip-btn btn-tip rounded-md hover:bg-strongCyan text-2xl w-24 h-12 bg-cyan-800 md:w-20 lg:w-28" id="fiftieth-percent"> 50% </button>
+                    <input type="number" placeholder="Custom" class="custom-input rounded-md  bg-gray-300 text-xl font-bold text-center text-green-400 w-24 h-12 md:w-20 md:text-sm lg:w-28 lg:text-2xl" id="custom-input-el">
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h2 class="text-1xl text-gray-500 font-bold lg:text-2xl"> No of people </h2>
+                <input type="number" placeholder="0" class="bill-form mt-3 rounded-md outline-none h-10 w-full bg-veryLightGrayishCyan text-gray-600 text-2xl font-bold border-none text-right md:w-72 lg:w-full p-6" id="no-of-people">
+            </div>
+
+        </div>
+
+        <div class="bg-veryDarkCyan mt-10 p-10 rounded-lg md:p-5 md:-mt-2 lg:w-1/2 lg:p-14">
+            <div class="flex flex-row items-center justify-between md:mt-16">
+                <div>
+                    <h3 class="text-white font-bold lg:text-2xl"> Tip Amount </h3>
+                    <p class="text-gray-500 font-bold"> / person </p>
+                </div>
+                <div>
+                    <span class="text-strongCyan font-bold text-3xl" id="tip-amount"> </span>
+                </div>
+            </div>
+
+            <div class="flex flex-row items-center justify-between mt-5">
+                <div>
+                    <h3 class="text-white font-bold lg:text-2xl"> Total </h3>
+                    <p class="text-gray-400 font-bold"> / person </p>
+                </div>
+                <div>
+                    <span class="text-strongCyan font-bold text-3xl" id="total-people"> </span>
+                </div>
+            </div>
+
+            <button class="text-white bg-cyan-700 font-bold rounded-xl w-80 h-12 mt-12 md:mt-24 hover:bg-cyan-200 hover:text-veryDarkCyan md:w-60 lg:w-full" id="reset-btn"> RESET </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="attribution mt-5 text-center text-2xl">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#"> Barsheyr </a>.
+    </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
